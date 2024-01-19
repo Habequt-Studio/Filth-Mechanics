@@ -2746,6 +2746,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3888a1e1c52793144a6d07b8c508772e, type: 3}
   - {fileID: 8300000, guid: 5b26cf3cd5f6b914a80e6d3476caaf86, type: 3}
   - {fileID: 8300000, guid: b16dc74b7376aca46bd0c6be96c940fa, type: 3}
+  defaultRun:
+  - {fileID: 0}
   metalSteps:
   - {fileID: 8300000, guid: c9a21ab161a98d24d92b6f2042abf954, type: 3}
   metalLanding:
@@ -2756,12 +2758,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 74f2c51d3031f5f45860a3efcfa62008, type: 3}
   - {fileID: 8300000, guid: 4461ba46b5d9dc145852a16acd683c50, type: 3}
   - {fileID: 8300000, guid: f40138f0f60548643bfb6d08103817a4, type: 3}
+  metalRun: []
   waterSteps: []
   waterLanding: []
   waterJump: []
+  waterRun: []
   stoneSteps: []
   stoneLanding: []
   stoneJump: []
+  stoneRun: []
 --- !u!81 &6601114674856704909
 AudioListener:
   m_ObjectHideFlags: 0
