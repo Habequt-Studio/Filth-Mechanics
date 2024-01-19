@@ -167,7 +167,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -280,7 +280,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -372,7 +372,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138859769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5.39, y: 0, z: -0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -434,7 +434,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c9a21ab161a98d24d92b6f2042abf954, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -641,7 +641,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f8c14f2814b4b124a894a65c32c44987, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -793,7 +793,7 @@ MonoBehaviour:
   character: {fileID: 6567071521782945451}
   groundCheck: {fileID: 6583359656117877030}
   stepAudio: {fileID: 1590112778}
-  runningAudio: {fileID: 1590112778}
+  runningAudio: {fileID: 433933931}
   velocityThreshold: 0.01
   landingAudio: {fileID: 69725997}
   landingSFX:
@@ -2758,7 +2758,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 74f2c51d3031f5f45860a3efcfa62008, type: 3}
   - {fileID: 8300000, guid: 4461ba46b5d9dc145852a16acd683c50, type: 3}
   - {fileID: 8300000, guid: f40138f0f60548643bfb6d08103817a4, type: 3}
-  metalRun: []
+  metalRun:
+  - {fileID: 8300000, guid: e2e390a9013c25a408e1ae78d6eae5cc, type: 3}
   waterSteps: []
   waterLanding: []
   waterJump: []
