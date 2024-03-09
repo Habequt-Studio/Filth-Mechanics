@@ -13,6 +13,14 @@ public class PauseMenu : MonoBehaviour
 
     public AudioListener audioListener;
 
+    public FirstPersonLook firstPersonLook;
+    private float sensivityPreset;
+
+    private void Start()
+    {
+        sensivityPreset = firstPersonLook.sensitivity;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(pauseKey))
@@ -29,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         audioListener.enabled = true;
+        firstPersonLook.sensitivity = sensivityPreset;
     }
 
     public void Pause()
@@ -39,6 +48,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         audioListener.enabled = false;
+        firstPersonLook.sensitivity = 0f;
     }
 
     public void LoadMenu()
