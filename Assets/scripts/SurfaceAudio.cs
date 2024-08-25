@@ -31,31 +31,25 @@ public class SurfaceAudio : MonoBehaviour
     public AudioClip[] stoneJump;
     public AudioClip[] stoneRun;
 
-    private Jump jump;
-
-    private void Start()
-    {
-        jump = GetComponent<Jump>();
-    }
-
     void Update()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, -transform.up, out hit, 2))
+        if (Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, 2))
         {
-            if (hit.collider.tag == "SurfaceMetal")
+            if (hit.collider.CompareTag("SurfaceMetal"))
             {
                 firstPersonAudio.stepAudio.clip = metalSteps[Random.Range(0, metalSteps.Length)];
                 firstPersonAudio.landingSFX = metalLanding;
                 firstPersonAudio.jumpSFX = metalJump;
                 firstPersonAudio.runningAudio.clip = metalRun[Random.Range(0, metalRun.Length)];
-            } else if (hit.collider.tag == "SurfaceWater")
+            }
+            else if (hit.collider.CompareTag("SurfaceWater"))
             {
                 firstPersonAudio.stepAudio.clip = waterSteps[Random.Range(0, waterSteps.Length)];
                 firstPersonAudio.landingSFX = waterLanding;
                 firstPersonAudio.jumpSFX = waterJump;
                 firstPersonAudio.runningAudio.clip = waterRun[Random.Range(0, waterRun.Length)];
-            } else if (hit.collider.tag == "SurfaceStone")
+            }
+            else if (hit.collider.CompareTag("SurfaceStone"))
             {
                 firstPersonAudio.stepAudio.clip = stoneSteps[Random.Range(0, stoneSteps.Length)];
                 firstPersonAudio.landingSFX = stoneLanding;
