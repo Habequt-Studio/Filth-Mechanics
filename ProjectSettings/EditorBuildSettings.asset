@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Day_abondoned  city.unity
+    guid: e126b32ecdec2824e811ee25011d4bf9
+  - enabled: 1
+    path: Assets/Scenes/abondoned_military_base.unity
+    guid: 2bbfc9c3c97995d438b93a5869b88369
   m_configObjects: {}
