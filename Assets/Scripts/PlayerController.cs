@@ -54,4 +54,20 @@ public class PlayerController : MonoBehaviour
             healthImage.sprite = HP_full;
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy projectile"))
+        {
+            Destroy(collision.gameObject);
+            TakeDamage(1);
+        } else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Rigidbody rb = this.GetComponent<Rigidbody>();
+            Vector3 pushDirection = transform.forward;
+            pushDirection.Normalize();
+            rb.AddExplosionForce(100, collision.transform.position, 1000);
+            TakeDamage(5);
+        }
+    }
 }
