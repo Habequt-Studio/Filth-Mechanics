@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
             Rigidbody rb = instance.GetComponent<Rigidbody>();
             rb.linearVelocity = projectileSpeed * pointOfFire.forward;
             Destroy(instance, 5);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(3.4f);
         }
     }
 }
