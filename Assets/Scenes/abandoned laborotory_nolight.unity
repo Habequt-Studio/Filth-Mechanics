@@ -38047,7 +38047,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4412679960677384582}
-  - component: {fileID: 4412679960677384583}
   - component: {fileID: 4412679960677384584}
   m_Layer: 0
   m_Name: controller4.1
@@ -42145,35 +42144,12 @@ Transform:
   m_GameObject: {fileID: 3924655799336000316}
   serializedVersion: 2
   m_LocalRotation: {x: 0.4989911, y: 0.5010069, z: -0.49900857, w: 0.5009895}
-  m_LocalPosition: {x: 0.199, y: 0.133, z: 0.257}
+  m_LocalPosition: {x: 0.53, y: 0.134, z: 0.02}
   m_LocalScale: {x: 1.2046499, y: 1.683587, z: 0.87715703}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6918149909285513037}
   m_LocalEulerAnglesHint: {x: 90.229004, y: -90, z: -180.002}
---- !u!136 &4412679960677384583
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3924655799336000316}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &4412679960677384584
 CapsuleCollider:
   m_ObjectHideFlags: 0
