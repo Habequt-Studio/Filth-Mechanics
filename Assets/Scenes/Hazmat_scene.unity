@@ -1094,6 +1094,61 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1511633147}
   m_LocalEulerAnglesHint: {x: -0.838, y: -203.08, z: 0.913}
+--- !u!1 &63118203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63118205}
+  - component: {fileID: 63118204}
+  m_Layer: 0
+  m_Name: controller4.1
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &63118204
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63118203}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &63118205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63118203}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.4989911, y: 0.5010069, z: -0.49900857, w: 0.5009895}
+  m_LocalPosition: {x: 0.057512283, y: -0.034999967, z: 0.024002075}
+  m_LocalScale: {x: 1.30943, y: 1.8300298, z: 0.95346}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6393512635561901562}
+  m_LocalEulerAnglesHint: {x: 90.229004, y: -90, z: -180.002}
 --- !u!1 &66055005
 GameObject:
   m_ObjectHideFlags: 0
@@ -20095,11 +20150,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!1 &1191013920 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6151357351334758762, guid: fb71a0ab0433d6244a0b88d049d92ec9, type: 3}
-  m_PrefabInstance: {fileID: 619283977}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1191013921 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6151357351334758761, guid: fb71a0ab0433d6244a0b88d049d92ec9, type: 3}
@@ -25996,11 +26046,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c937d6783805abe4e9dedf645665d5e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseGame: 0
-  pauseGameMenu: {fileID: 1191013920}
-  pauseKey: 9
-  audioListener: {fileID: 6455346887522167528}
-  firstPersonLook: {fileID: 6423254443805858948}
 --- !u!1 &1475287631
 GameObject:
   m_ObjectHideFlags: 0
@@ -40930,6 +40975,7 @@ Transform:
   - {fileID: 6393792612865858074}
   - {fileID: 6387325183826889782}
   - {fileID: 148092225287442694}
+  - {fileID: 63118205}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6393792612865858074
@@ -41091,43 +41137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5648cc97eaa8334e9002eccf712c277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstPersonAudio: {fileID: 148092225287442689}
-  defaultSteps:
-  - {fileID: 0}
-  defaultLanding:
-  - {fileID: 0}
-  defaultJump:
-  - {fileID: 0}
-  defaultRun:
-  - {fileID: 0}
-  metalSteps:
-  - {fileID: 8300000, guid: c9a21ab161a98d24d92b6f2042abf954, type: 3}
-  metalLanding:
-  - {fileID: 8300000, guid: 67cb913aed4580344b7b50443c24831d, type: 3}
-  - {fileID: 8300000, guid: fbb92e814fcf22947adb42dd5f449ff4, type: 3}
-  - {fileID: 8300000, guid: 00585e0c25272a64d8b3d2c5b686bba9, type: 3}
-  metalJump:
-  - {fileID: 8300000, guid: 637e9645a0e5bdc47bb4f3cf3a755d6e, type: 3}
-  - {fileID: 8300000, guid: f7280ebc0b7fc0d4cac605829a97fddc, type: 3}
-  - {fileID: 8300000, guid: 74f2c51d3031f5f45860a3efcfa62008, type: 3}
-  metalRun:
-  - {fileID: 8300000, guid: e2e390a9013c25a408e1ae78d6eae5cc, type: 3}
-  waterSteps:
-  - {fileID: 8300000, guid: 2545c2eb806d27147be6abd98702e255, type: 3}
-  waterLanding:
-  - {fileID: 8300000, guid: 00c7cd6e8b4743841a5edd46619ffceb, type: 3}
-  waterJump:
-  - {fileID: 0}
-  waterRun:
-  - {fileID: 0}
-  stoneSteps:
-  - {fileID: 0}
-  stoneLanding:
-  - {fileID: 0}
-  stoneJump:
-  - {fileID: 0}
-  stoneRun:
-  - {fileID: 0}
 --- !u!114 &6436465900149680205
 MonoBehaviour:
   m_ObjectHideFlags: 0
