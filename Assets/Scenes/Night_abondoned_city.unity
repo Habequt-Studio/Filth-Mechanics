@@ -3166,6 +3166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 170080274}
   - component: {fileID: 170080275}
+  - component: {fileID: 170080276}
   m_Layer: 0
   m_Name: fonar_light
   m_TagString: Untagged
@@ -3182,7 +3183,7 @@ Transform:
   m_GameObject: {fileID: 170080273}
   serializedVersion: 2
   m_LocalRotation: {x: 0.04514686, y: -0.07431717, z: -0.44821638, w: 0.88968587}
-  m_LocalPosition: {x: 0.57899743, y: -0.19800007, z: 0.6290014}
+  m_LocalPosition: {x: 0.55299646, y: -0.19999993, z: 0.7750051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3199,7 +3200,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
-  m_Intensity: 2
+  m_Intensity: 40
   m_Range: 35.615803
   m_SpotAngle: 36.45498
   m_InnerSpotAngle: 6.1528277
@@ -3253,6 +3254,29 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &170080276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170080273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &194704883
 GameObject:
   m_ObjectHideFlags: 0
@@ -17153,15 +17177,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7b8e578022d53d645b5a5fc7d64840e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7219952
+      value: 0.6959942
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b8e578022d53d645b5a5fc7d64840e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.471
+      value: -1.4729998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b8e578022d53d645b5a5fc7d64840e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.165
+      value: -0.018996283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b8e578022d53d645b5a5fc7d64840e6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17198,7 +17222,7 @@ PrefabInstance:
     - target: {fileID: 3885908833818536555, guid: 7b8e578022d53d645b5a5fc7d64840e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b009653929cd01b41884be922e2922b0, type: 2}
+      objectReference: {fileID: 2100000, guid: af07f143090ed18438a385ad5f8a7e22, type: 2}
     - target: {fileID: 3885908833818536555, guid: 7b8e578022d53d645b5a5fc7d64840e6, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -17219,6 +17243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988795086}
   - component: {fileID: 988795087}
+  - component: {fileID: 988795088}
   m_Layer: 0
   m_Name: decor light (1)
   m_TagString: Untagged
@@ -17235,7 +17260,7 @@ Transform:
   m_GameObject: {fileID: 988795085}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2727, y: -0.05400005, z: 0.92499906}
+  m_LocalPosition: {x: 0.24669904, y: 0.14900014, z: 1.0610037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17306,6 +17331,29 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &988795088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988795085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &993492148
 GameObject:
   m_ObjectHideFlags: 0
@@ -25585,6 +25633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1504654888}
   - component: {fileID: 1504654889}
+  - component: {fileID: 1504654890}
   m_Layer: 0
   m_Name: decor light
   m_TagString: Untagged
@@ -25601,7 +25650,7 @@ Transform:
   m_GameObject: {fileID: 1504654887}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.548, y: 0.01, z: 0.925}
+  m_LocalPosition: {x: 0.521999, y: 0.008000145, z: 1.0710037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25618,7 +25667,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0
   m_Range: 0.6133728
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -25672,6 +25721,29 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1504654890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504654887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1532958094
 GameObject:
   m_ObjectHideFlags: 0
@@ -34526,15 +34598,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbcee79af5ddf8f40b00003418f7c869, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.56199914
+      value: 0.536
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbcee79af5ddf8f40b00003418f7c869, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1650001
+      value: -1.167
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbcee79af5ddf8f40b00003418f7c869, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.1049993
+      value: 1.251
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbcee79af5ddf8f40b00003418f7c869, type: 3}
       propertyPath: m_LocalRotation.w
@@ -34575,7 +34647,7 @@ PrefabInstance:
     - target: {fileID: -1362468847470238248, guid: bbcee79af5ddf8f40b00003418f7c869, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 092a70350d977ba4ca66bf657736e380, type: 2}
+      objectReference: {fileID: 2100000, guid: 9552959bd8cebea4e9b2711d74ab7c9c, type: 2}
     - target: {fileID: 919132149155446097, guid: bbcee79af5ddf8f40b00003418f7c869, type: 3}
       propertyPath: m_Name
       value: flashlight
@@ -35232,6 +35304,7 @@ GameObject:
   - component: {fileID: 6415568556696875881}
   - component: {fileID: 6455346887741100143}
   - component: {fileID: 6423254444693693955}
+  - component: {fileID: 6455346887741100144}
   m_Layer: 0
   m_Name: First Person Camera
   m_TagString: MainCamera
@@ -35487,6 +35560,50 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6390900480593455585}
   m_Enabled: 1
+--- !u!114 &6455346887741100144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6390900480593455585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
