@@ -23,11 +23,11 @@ public class Avtomat1 : MonoBehaviour {
 
     }
     if (Input.GetKeyDown (KeyCode.R)) {
-      Arsenal = Arsenal - 7;
-      Magaz = 7;
+      Arsenal = Arsenal - 15;
+      Magaz = 15;
     
     }
-    Ammo.text="Ammo  :  "+Magaz;
+    Ammo.text="Store :  "+Magaz;
     UIArsenal.text="/  "+Arsenal;
   }
 }
