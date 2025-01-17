@@ -26755,12 +26755,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551276956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4b15bf7d567044419038dd1b9d95021, type: 3}
+  m_Script: {fileID: 11500000, guid: 260f8dd58a98c6345a4bd9f2451127d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 289915311}
   BulletForce: 5000
-  Magaz: 7
+  Magaz: 15
   Fire: {fileID: 0}
   Reload: {fileID: 0}
   spawn: {fileID: 1265704206}
