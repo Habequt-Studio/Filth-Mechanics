@@ -10433,6 +10433,10 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 6151357350081401308, guid: fb71a0ab0433d6244a0b88d049d92ec9, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 6151357350448710225, guid: fb71a0ab0433d6244a0b88d049d92ec9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -10501,6 +10505,10 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4279005440
       objectReference: {fileID: 0}
+    - target: {fileID: 6151357350671838014, guid: fb71a0ab0433d6244a0b88d049d92ec9, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 6151357350775621755, guid: fb71a0ab0433d6244a0b88d049d92ec9, type: 3}
       propertyPath: m_fontColor.b
       value: 0
@@ -10516,6 +10524,10 @@ PrefabInstance:
     - target: {fileID: 6151357350775621755, guid: fb71a0ab0433d6244a0b88d049d92ec9, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151357350775621755, guid: fb71a0ab0433d6244a0b88d049d92ec9, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 6151357351334758761, guid: fb71a0ab0433d6244a0b88d049d92ec9, type: 3}
       propertyPath: m_Pivot.x
@@ -15778,7 +15790,7 @@ GameObject:
   - component: {fileID: 853784569}
   - component: {fileID: 853784568}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26752,6 +26764,9 @@ MonoBehaviour:
   Fire: {fileID: 0}
   Reload: {fileID: 0}
   spawn: {fileID: 1265704206}
+  Ammo: {fileID: 0}
+  Arsenal: 21
+  UIArsenal: {fileID: 0}
 --- !u!1 &1556759096
 GameObject:
   m_ObjectHideFlags: 0
