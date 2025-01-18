@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class Avtomat1 : MonoBehaviour {
 
   public Transform bullet;
@@ -10,9 +11,9 @@ public class Avtomat1 : MonoBehaviour {
   public AudioClip Fire;
   public AudioClip Reload;  
   public Transform spawn;
-  public Text Ammo;
+  public TMP_Text Ammo;
  public int Arsenal = 21;
- public Text UIArsenal;
+ public TMP_Text UIArsenal;
   void Update () {
     if (Input.GetMouseButtonDown (0) && Magaz > 0) {
       Transform BulletInstance = (Transform)Instantiate (bullet, spawn.position, Quaternion.identity);
