@@ -7,7 +7,6 @@ public class WaterDamage : MonoBehaviour
 
     public bool isEnabled = true;
 
-    [Tooltip("Ѕезопасное врем€ нахождени€ в воде в секундах")]
     public float timerStart = 2;
     [SerializeField]
     private float timer;
