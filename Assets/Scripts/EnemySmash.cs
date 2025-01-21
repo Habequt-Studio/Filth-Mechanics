@@ -3,18 +3,18 @@ using System.Collections;
 
 public class EnemySmash : MonoBehaviour{
 public GameObject Emeny;
-public GameObject DeadZone;
+public GameObject DamageForController;
    void Start() {
-    DeadZone.SetActive (false);
+    DamageForController.SetActive (false);
    }
    void OnTriggerEnter(Collider other) {
     if(other.tag=="Player") {
         Emeny.GetComponent<Animator>().SetTrigger ("Attack");
-        DeadZone.SetActive (true);
+        DamageForController.SetActive (true);
     }
    }
   void OnTriggerExit(Collider other) {
    if(other.tag=="Player") {
-    DeadZone.SetActive (false);
+    DamageForController.SetActive (false);
    }
   }}
