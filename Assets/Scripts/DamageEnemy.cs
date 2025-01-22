@@ -7,12 +7,10 @@ public GameObject Ragdoll;
 public float HP = 100;
 void Update () {
  if (HP < 0) {
+  Instantiate(Ragdoll, transform.position, transform.rotation);
+  Destroy (gameObject);
     void OnTriggerEnter (Collider other) {
-    if(other.tag=="") {
-    Emeny.SetActive (false);
-    Ragdoll.SetActive (true);
-    Instantiate(Ragdoll, transform.position, transform.rotation);
-        
-    }
-}}
-
+     if(other.tag=="ControllerBullet") {
+      HP = HP - 15f;
+    }}
+}}}
