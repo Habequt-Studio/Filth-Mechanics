@@ -4,7 +4,9 @@ using System.Collections;
 public class DamageEnemy : MonoBehaviour {
 public GameObject Emeny;
 public GameObject Ragdoll;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+public float HP = 100;
+void Update () {
+ if (HP < 0) {
     void OnTriggerEnter (Collider other) {
     if(other.tag=="") {
     Emeny.SetActive (false);
@@ -12,5 +14,5 @@ public GameObject Ragdoll;
     Instantiate(Ragdoll, transform.position, transform.rotation);
         
     }
-    }
-}
+}}
+
