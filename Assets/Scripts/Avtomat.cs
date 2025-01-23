@@ -18,7 +18,7 @@ public class Avtomat1 : MonoBehaviour {
   void Update () {
     if (Input.GetMouseButtonDown (0) && CurrentAmmo > 0) {
     Avtomat.GetComponent<Animator>(). SetTrigger ("Shot");
-      Transform BulletInstance = (Transform)Instantiate (bullet, spawn.position, Quaternion.identity);
+      Transform BulletInstance = (Transform)Instantiate (bullet, spawn.position, spawn.rotation);
       BulletInstance.GetComponent<Rigidbody> ().AddRelativeForce (transform.forward * (BulletForce * -1));
       CurrentAmmo = CurrentAmmo - 1;
       GetComponent<AudioSource> ().PlayOneShot (Fire);
