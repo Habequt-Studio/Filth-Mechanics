@@ -10,7 +10,7 @@ public class StaminaBar : MonoBehaviour
  [SerializeField] private float maxStamina = 100.0f;
  [SerializeField] private float JumpCost = 20;
  [HideInInspector] public bool HasReGenerated = true;
- [HideInInspector] public bool WeAreSpriting = false;
+ [HideInInspector] public bool WeAreSprinting = false;
 
  [Header("Stamina Regen parametrs")]
  [Range(0, 50)] [SerializeField] private float staminaDrain = 0.5f;
@@ -23,13 +23,23 @@ public class StaminaBar : MonoBehaviour
  [Header("Stamina UI elements")]
  [SerializeField] private Image StaminaProgressUI = null;
  [SerializeField] private CanvasGroup SliderCanvasGroup = null;
-    void Start()
-    {
-        
-    }
 
-    void Update()
+ private PlayerController playerController;
+
+ private void Start()
     {
-        
+        playerController = GetComponent<PlayerController>();
+    }
+    private void Update()
+    {
+     if (!WeAreSprinting)
+      if (playerStamina <= maxStamina - 0.01)
+      {
+       playerStamina += staminaRegen * Time.deltaTime;
+       if (playerStamina >= maxStamina)
+       {
+        HasReGenerated = true;
+       }
+      }
     }
 }
