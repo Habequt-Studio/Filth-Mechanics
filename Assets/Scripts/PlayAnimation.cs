@@ -13,7 +13,8 @@ public class PlayAnimation : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Object = GetComponent<Animator>();
+     if(other.tag=="Play")
+        Object.GetComponent<Animator>().SetTrigger ("Play");
     }
 
     void OnTriggerExit(Collider other)
