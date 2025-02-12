@@ -3,22 +3,23 @@ using System.Collections;
 
 public class OpenFinalDoor : MonoBehaviour
 {
- public GameObject ColliderOpen;
- public GameObject ColliderClose;
- public Transform Door;
+ public GameObject Collider;
+ public Transform FinalDoor;
+ public GameObject ColliderNot;
+
     void Start()
     {
-        ColliderClose.SetActive (true);
-        ColliderOpen.SetActive (true);
-        Door.GetComponent<Animator>().SetTrigger ("Idle");
+        Collider.SetActive (true);
+        ColliderNot.SetActive (false);
     }
 
     void OnTriggerEnter()
     {
-       Door.GetComponent<Animator>().SetTrigger ("Open");
+        FinalDoor.GetComponent<Animator>();
     }
     void OnTriggerExit()
     {
-        Door.GetComponent<Animator>().SetTrigger ("Close");
+        Collider.SetActive (false);
+        ColliderNot.SetActive (true);
     }
 }
