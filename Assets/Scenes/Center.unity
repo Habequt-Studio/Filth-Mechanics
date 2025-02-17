@@ -4120,7 +4120,6 @@ Transform:
   - {fileID: 1681704018}
   - {fileID: 617069787}
   - {fileID: 1190641595}
-  - {fileID: 1641034854}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &610744814
@@ -7188,7 +7187,6 @@ GameObject:
   - component: {fileID: 1050431186}
   - component: {fileID: 1050431185}
   - component: {fileID: 1050431190}
-  - component: {fileID: 1050431191}
   m_Layer: 0
   m_Name: First Person Camera
   m_TagString: MainCamera
@@ -7204,8 +7202,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050431183}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.054971013, y: 0.04948616, z: 0.00023403959, w: 0.9972609}
-  m_LocalPosition: {x: 0.3016023, y: 2.346169, z: 0.25139254}
+  m_LocalRotation: {x: -0.0057405205, y: -0.5281906, z: 0.0024472282, w: 0.8491029}
+  m_LocalPosition: {x: 3.7947, y: 2.004133, z: 2.4712965}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7374,69 +7372,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!320 &1050431191
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050431183}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -8146802361844076246, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
-    value: {fileID: 1050431190}
-  - key: {fileID: 6041716342381189585, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
-    value: {fileID: 1669240480}
-  - key: {fileID: 8233732362683940661, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
-    value: {fileID: 769654005}
-  - key: {fileID: 2916883568030848395, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
-    value: {fileID: 582640018}
-  - key: {fileID: 5648645063790397687, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
-    value: {fileID: 261187966}
-  - key: {fileID: -8551515814091559726, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
-    value: {fileID: 919132148851366895}
-  m_ExposedReferences:
-    m_References:
-    - facfdfdd37082d44caf602a84ccfb810: {fileID: 1315122730}
-    - 02194d63c4110414e955fe626f81eaad: {fileID: 1686900017}
-    - bb02936b16d964f41875c2d33dd2b31b: {fileID: 1681704017}
-    - 1e58ed74023231b4694aaa55718feb14: {fileID: 1758361208}
-    - 3e80c6a776fc0f94cad638c3534360fd: {fileID: 1563200476}
-    - 0bb038a6769257747a9ca2be4d0cb597: {fileID: 1704339770}
-    - d63b168fb623c214192219d4c4e4e78d: {fileID: 1169775416}
-    - 7557b17aa47e34648bccc89d738b5e32: {fileID: 982644681}
-    - 0bbd063761465f4469b0a482d5b2e996: {fileID: 617069786}
-    - 235b153cf345b8741a87d9ff176014cb: {fileID: 523194273}
-    - 7bd47abaec530e548bf20bf8fe4a8c7e: {fileID: 961603168}
-    - 2e8e6c613c0eaea4a8d5cdaba7a4e716: {fileID: 1935365158}
-    - 98f5f5863c300c849a2e7e4ed26337fd: {fileID: 1686900017}
-    - 1d25549b63f209040b40b531023de4f3: {fileID: 1913646825}
-    - 35d4a79db8dd0cd45bb7177cdfcf58ab: {fileID: 777764294}
-    - ac1c296c87ff58a49835b223dd566157: {fileID: 925686023}
-    - 212e43580aecd2d4186b105e44a3087c: {fileID: 1628095292}
-    - 15f02351c234f094aaac70d508187c99: {fileID: 319485505}
-    - 436bbf6a5de4d9048862ea82bccd59d9: {fileID: 1994628800}
-    - d50cabf5f0e84fa43bef247b518e2283: {fileID: 1190641594}
-    - 931539787e4c939468078001ad730a42: {fileID: 925686023}
-    - 45e2c8bed773cea489882aa28be48a46: {fileID: 1758361208}
-    - 5e975f2cd95a80343a837d5b30b91a4b: {fileID: 523194273}
-    - 3e324b3aa55c69e43a8f1f8ede0a5286: {fileID: 982644681}
-    - 7542be2e8f31f1643908d8221a99ec8b: {fileID: 1628095292}
-    - 05d05f710d225034691d69bdfdf4e6f8: {fileID: 1551740284}
-    - 2b7964cfc45cfed49a24641346973674: {fileID: 2121288084}
-    - 9da9b8266b6198e4fb6bcdd089c902b1: {fileID: 1006801467}
-    - cffa98233cffcfc498c893801a6e90a1: {fileID: 1111026097}
-    - d56431d95dacb424c9a8f1a300d440c4: {fileID: 925686023}
-    - 8b098c563f3b1bb43a567d6c609b02f4: {fileID: 1561650583}
-    - 6a459dc1462bcc34583454b20807397f: {fileID: 1006801467}
-    - 4dfeef3617b976942b8a1479705997c7: {fileID: 434876333}
-    - a5b3e968d4ffbfb4db1649b8d30eee27: {fileID: 627701170}
 --- !u!1 &1055307652
 GameObject:
   m_ObjectHideFlags: 0
@@ -9500,7 +9435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ColliderPred: {fileID: 1213092757}
   TimeLine: {fileID: 582640019}
-  Cameras: {fileID: 582640018}
+  Cameras: {fileID: 1641034853}
 --- !u!114 &1328823308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11573,12 +11508,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641034853}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.008937646, y: -0.70385647, z: 0.01572142, w: -0.71011204}
-  m_LocalPosition: {x: -14.817018, y: -1.3547403, z: -12.864134}
+  m_LocalRotation: {x: -0, y: -0, z: -4.6566123e-10, w: 1}
+  m_LocalPosition: {x: -185.52806, y: 1.997683, z: -46.100132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 582640019}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!320 &1641034855
 PlayableDirector:
@@ -11589,17 +11524,51 @@ PlayableDirector:
   m_GameObject: {fileID: 1641034853}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 7a680a92e34c2d04fb961fe3105e0e48, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 6162691068240388686, guid: 7a680a92e34c2d04fb961fe3105e0e48, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5648645063790397687, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
+    value: {fileID: 919132148851366895}
+  - key: {fileID: -8551515814091559726, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
+    value: {fileID: 261187966}
+  - key: {fileID: -8146802361844076246, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
     value: {fileID: 1050431190}
+  - key: {fileID: 6041716342381189585, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
+    value: {fileID: 1669240480}
+  - key: {fileID: 8233732362683940661, guid: 13c70af13d1bdfa47be690a4b613810e, type: 2}
+    value: {fileID: 582640018}
   m_ExposedReferences:
     m_References:
+    - 02194d63c4110414e955fe626f81eaad: {fileID: 1686900017}
+    - 1e58ed74023231b4694aaa55718feb14: {fileID: 1758361208}
+    - 3e80c6a776fc0f94cad638c3534360fd: {fileID: 1563200476}
+    - 0bb038a6769257747a9ca2be4d0cb597: {fileID: 1704339770}
+    - d63b168fb623c214192219d4c4e4e78d: {fileID: 1169775416}
+    - 655f55b648b1a5744ab2c89159a73517: {fileID: 1169775416}
+    - 0bbd063761465f4469b0a482d5b2e996: {fileID: 617069786}
+    - 235b153cf345b8741a87d9ff176014cb: {fileID: 523194273}
+    - 7bd47abaec530e548bf20bf8fe4a8c7e: {fileID: 961603168}
+    - 2e8e6c613c0eaea4a8d5cdaba7a4e716: {fileID: 1935365158}
+    - 98f5f5863c300c849a2e7e4ed26337fd: {fileID: 1686900017}
+    - 1d25549b63f209040b40b531023de4f3: {fileID: 1913646825}
+    - 35d4a79db8dd0cd45bb7177cdfcf58ab: {fileID: 777764294}
+    - 212e43580aecd2d4186b105e44a3087c: {fileID: 1628095292}
+    - 15f02351c234f094aaac70d508187c99: {fileID: 319485505}
+    - 436bbf6a5de4d9048862ea82bccd59d9: {fileID: 1994628800}
+    - d50cabf5f0e84fa43bef247b518e2283: {fileID: 1190641594}
+    - 931539787e4c939468078001ad730a42: {fileID: 925686023}
     - 14b7366c1fd2b0245bf4407f4ec96bae: {fileID: 1050431183}
+    - 3e324b3aa55c69e43a8f1f8ede0a5286: {fileID: 982644681}
+    - 05d05f710d225034691d69bdfdf4e6f8: {fileID: 1551740284}
+    - 9da9b8266b6198e4fb6bcdd089c902b1: {fileID: 1006801467}
+    - cffa98233cffcfc498c893801a6e90a1: {fileID: 1111026097}
+    - 8b098c563f3b1bb43a567d6c609b02f4: {fileID: 1561650583}
+    - 4dfeef3617b976942b8a1479705997c7: {fileID: 434876333}
 --- !u!1001 &1664759408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23139,5 +23108,6 @@ SceneRoots:
   - {fileID: 1754354810}
   - {fileID: 1119701546}
   - {fileID: 1862418058}
+  - {fileID: 1641034854}
   - {fileID: 582640019}
   - {fileID: 725027242}
