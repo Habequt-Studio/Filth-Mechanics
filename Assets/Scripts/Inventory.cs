@@ -18,6 +18,8 @@ public class Inventory : MonoBehaviour
     private int currentInvSlot = 0; //0 - flashlight; 1 - weapon
     private int maxInvSlot = 1;
 
+    private float inventoryTimer = 0;
+
     private void Start()
     {
         flashlightHolder.SetActive(true);
@@ -35,7 +37,7 @@ public class Inventory : MonoBehaviour
                 currentInvSlot = maxInvSlot;
             }
             print("Selected slot: " + currentInvSlot.ToString());
-            inventoryPanel.SetActive(true);
+            ShowInventory();
         }
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
@@ -45,13 +47,32 @@ public class Inventory : MonoBehaviour
                 currentInvSlot = 0;
             }
             print("Selected slot: " + currentInvSlot.ToString());
-            inventoryPanel.SetActive(true);
+            ShowInventory();
         }
 
         if (Input.GetMouseButtonDown(0) && inventoryPanel.activeSelf)
         {
             UpdateWeaponSlots();
         }
+
+        if (inventoryPanel.activeSelf)
+        {
+            inventoryTimer -= Time.deltaTime;
+            if (inventoryTimer > 0)
+            {
+                inventoryPanel.SetActive(true);
+            } else
+            {
+                inventoryPanel.SetActive(false);
+                inventoryTimer = 0.0f;
+            }
+        }
+    }
+
+    private void ShowInventory()
+    {
+        inventoryTimer = 1.0f;
+        inventoryPanel.SetActive(true);
     }
 
     private void UpdateWeaponSlots()
