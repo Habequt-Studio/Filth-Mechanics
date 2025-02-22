@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: ce9ee4cafeb1e0f4d8e4bb016d5f8cd0
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: FinalDOOR(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: qe_blastdoor.smd.001
+      parentName: FinalDOOR(Clone)
+      position: {x: -51.065548, y: 72.71767, z: 50.477608}
+      rotation: {x: -0.50192666, y: 0.49806595, z: 0.49808076, w: 0.5019118}
+      scale: {x: 1.9969401, y: 1.8996046, z: 1.8996046}
+    - name: qe_blastdoor.smd.002
+      parentName: FinalDOOR(Clone)
+      position: {x: -51.08947, y: 72.73783, z: 48.102467}
+      rotation: {x: -0.50192666, y: 0.49806595, z: 0.49808076, w: 0.5019118}
+      scale: {x: 1.9969401, y: 1.8996046, z: 1.8996046}
+    - name: qe_blastdoor.smd.003
+      parentName: FinalDOOR(Clone)
+      position: {x: -51.078773, y: 75.964645, z: 50.45143}
+      rotation: {x: -0.50192666, y: 0.49806595, z: 0.49808076, w: 0.5019118}
+      scale: {x: 1.9969401, y: 1.8996046, z: 1.8996046}
+    - name: qe_blastdoor.smd.005
+      parentName: FinalDOOR(Clone)
+      position: {x: -51.080563, y: 72.89512, z: 52.950035}
+      rotation: {x: -0.50192666, y: 0.49806595, z: 0.49808076, w: 0.5019118}
+      scale: {x: 1.9969401, y: 1.8996046, z: 1.8996046}
+    - name: qe_blastdoor.smd.006
+      parentName: FinalDOOR(Clone)
+      position: {x: -51.088444, y: 74.08251, z: 50.69432}
+      rotation: {x: -0.50192666, y: 0.49806595, z: 0.49808076, w: 0.5019118}
+      scale: {x: 1.9969401, y: 1.8996046, z: 1.8996046}
+    - name: qe_blastdoor.smd.007
+      parentName: FinalDOOR(Clone)
+      position: {x: -51.074284, y: 75.951584, z: 47.928963}
+      rotation: {x: -0.50192666, y: 0.49806595, z: 0.49808076, w: 0.5019118}
+      scale: {x: 1.9969401, y: 1.8996046, z: 1.8996046}
+    - name: qe_blastdoor.smd.008
+      parentName: FinalDOOR(Clone)
+      position: {x: -51.151497, y: 75.95636, z: 53.1952}
+      rotation: {x: -0.50192666, y: 0.49806595, z: 0.49808076, w: 0.5019118}
+      scale: {x: 1.9969401, y: 1.8996046, z: 1.8996046}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
