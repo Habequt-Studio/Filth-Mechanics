@@ -15,6 +15,9 @@ public class Inventory : MonoBehaviour
     public Image weaponSprite;
     public GameObject inventoryPanel;
 
+    public Color inactiveBackgroundColor;
+    public Color activeBackgroundColor;
+
     private int currentInvSlot = 0; //0 - flashlight; 1 - weapon
     private int maxInvSlot = 1;
 
@@ -29,24 +32,24 @@ public class Inventory : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             currentInvSlot++;
             if (currentInvSlot > maxInvSlot)
             {
                 currentInvSlot = maxInvSlot;
             }
-            print("Selected slot: " + currentInvSlot.ToString());
+            UpdateColors();
             ShowInventory();
         }
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             currentInvSlot--;
             if (currentInvSlot < 0)
             {
                 currentInvSlot = 0;
             }
-            print("Selected slot: " + currentInvSlot.ToString());
+            UpdateColors();
             ShowInventory();
         }
 
@@ -69,12 +72,28 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    private void UpdateColors()
+    {
+        switch (currentInvSlot)
+        {
+            case 0:
+                flashLighSprite.color = activeBackgroundColor;
+                weaponSprite.color = inactiveBackgroundColor;
+                break;
+            case 1:
+                flashLighSprite.color = inactiveBackgroundColor;
+                weaponSprite.color = activeBackgroundColor;
+                break;
+        }
+    }
+
     private void ShowInventory()
     {
-        inventoryTimer = 1.0f;
+        inventoryTimer = 4.0f;
         inventoryPanel.SetActive(true);
     }
 
+    //update current weapon by current inventory index
     private void UpdateWeaponSlots()
     {
         inventoryPanel.SetActive(true);
@@ -89,6 +108,7 @@ public class Inventory : MonoBehaviour
                 SetFlashlight(false);
                 break;
         }
+        inventoryTimer = 0.0f;
     }
 
     void SetWeapon(bool active)
