@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Inventory : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Inventory : MonoBehaviour
 
     public Image flashLighSprite;
     public Image weaponSprite;
+    public GameObject ammo;
     public GameObject inventoryPanel;
 
     public Color inactiveBackgroundColor;
@@ -28,6 +30,7 @@ public class Inventory : MonoBehaviour
         flashlightHolder.SetActive(true);
         weaponHolder.SetActive(false);
         inventoryPanel.SetActive(false);
+        ammo.SetActive(false);
     }
 
     private void Update()
@@ -103,10 +106,12 @@ public class Inventory : MonoBehaviour
                 SetFlashlight(true);
                 SetWeapon(false);
                 break;
+                Setammo(false);
             case 1:
                 SetWeapon(true);
                 SetFlashlight(false);
                 break;
+                Setammo(true);
         }
         inventoryTimer = 0.0f;
     }
