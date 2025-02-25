@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 4 5
+  m_Name: 4 9
   m_Shader: {fileID: -6465566751694194690, guid: bbea97b21d7a38941a8c18425ac00015, type: 3}
-  m_Parent: {fileID: 2100000, guid: fa596e1dec60d044798830026637d6e0, type: 2}
+  m_Parent: {fileID: 2100000, guid: 9552959bd8cebea4e9b2711d74ab7c9c, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -33,7 +33,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Main_texture:
-        m_Texture: {fileID: 2800000, guid: 27de7d3a18ab4e847b2fd908815fb905, type: 3}
+        m_Texture: {fileID: 2800000, guid: 81f43eff954e9e8448b49fbaf6bb6618, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
