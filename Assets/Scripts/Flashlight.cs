@@ -15,7 +15,7 @@ public class Flashlight : MonoBehaviour
     void Update()
     {
         // Переключение фонарика при нажатии кнопки "F" или кнопки на экране
-        if (Input.GetKeyDown(KeyCode.F) && grabActive)
+        if ((Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Mouse0)) && grabActive)
         {
             isFlashlightOn = !isFlashlightOn;
         }

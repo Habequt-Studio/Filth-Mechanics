@@ -22,7 +22,7 @@ public class Inventory : MonoBehaviour
     public Color activeBackgroundColor;
 
     private int currentInvSlot = 0; //0 - flashlight; 1 - weapon
-    private int maxInvSlot = 1;
+    private readonly int maxInvSlot = 1;
 
     private float inventoryTimer = 0;
 
@@ -121,12 +121,12 @@ public class Inventory : MonoBehaviour
     void SetWeapon(bool active)
     {
         weaponHolder.SetActive(active);
-ammo.SetActive(active);
+        ammo.SetActive(active);
     }
 
     void SetFlashlight(bool active)
     {
         flashlightHolder.SetActive(active);
-FlashLightBar.SetActive(active);
+        FlashLightBar.SetActive(active);
     }
 }
