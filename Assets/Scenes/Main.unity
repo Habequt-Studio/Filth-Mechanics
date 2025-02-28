@@ -4901,7 +4901,7 @@ MonoBehaviour:
   spotlight: {fileID: 217379684}
   barLight: {fileID: 1565314919}
   batteryLife: 100
-  drainRate: 5
+  drainRate: 10
   grabActive: 1
 --- !u!1 &1565314917
 GameObject:
