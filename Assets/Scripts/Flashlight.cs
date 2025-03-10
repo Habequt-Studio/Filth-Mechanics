@@ -10,6 +10,7 @@ public class Flashlight : MonoBehaviour
     public float batteryLife = 100.0f; // Общая емкость аккумулятора
     public float drainRate = 10.0f;    // Скорость разрядки аккумулятора
     private bool isFlashlightOn = false;
+    public AudioClip OnOfSpotlight;
 
     public bool grabActive = false;
     void Update()
@@ -18,6 +19,7 @@ public class Flashlight : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Mouse0)) && grabActive)
         {
             isFlashlightOn = !isFlashlightOn;
+            GetComponent<AudioSource>().PlayOneShot(OnOfSpotlight);
         }
 
         // Обновление состояния аккумулятора
