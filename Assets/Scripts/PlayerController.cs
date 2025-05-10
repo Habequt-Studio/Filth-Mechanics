@@ -59,8 +59,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy projectile"))
         {
-            Destroy(collision.gameObject);
-            TakeDamage(1);
+            //Destroy(collision.gameObject);
+            //TakeDamage(1);
         } else if (collision.gameObject.CompareTag("Enemy"))
         {
             Rigidbody rb = this.GetComponent<Rigidbody>();

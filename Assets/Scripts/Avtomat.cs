@@ -20,13 +20,35 @@ public class Avtomat1 : MonoBehaviour {
     public TMP_Text Ammo_text;
     public GameObject Avtomat;
 
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(0) && CurrentAmmo > 0)
         {
+            LayerMask layerMask = LayerMask.GetMask("Enemy");
             Avtomat.GetComponent<Animator>().SetTrigger("Shot");
-            Transform BulletInstance = (Transform)Instantiate(bullet, spawn.position, spawn.rotation);
-            BulletInstance.GetComponent<Rigidbody>().AddRelativeForce(transform.forward * (BulletForce * -1));
+
+            RaycastHit hit;
+            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask) 
+                && hit.collider.CompareTag("Enemy"))
+
+            {
+                Enemy en = hit.collider.GetComponent<Enemy>();
+                if (en == null)
+                {
+                    DamageEnemy den = hit.collider.GetComponent<DamageEnemy>();
+                    if (den == null)
+                    {
+                        Debug.LogError("Enemy does not have a valid Enemy scipt!");
+                    } else
+                    {
+                        den.TakeDamage(5);
+                    }
+                } else
+                {
+                    en.TakeDamage(5);
+                }
+            }
+
             CurrentAmmo--;
             GetComponent<AudioSource>().PlayOneShot(Fire);
         }
